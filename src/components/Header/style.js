@@ -24,6 +24,11 @@ export const HeaderBg = styled.header`
       @media (max-width: 425px){
           width: 100%;
       }
+      @media (max-width: 412px){
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+      }
       svg {
         display: none;
         height: 100%;

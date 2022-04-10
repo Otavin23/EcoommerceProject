@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const MainBG = styled.main`
   max-width: 100%;
@@ -6,36 +6,40 @@ export const MainBG = styled.main`
   justify-content: center;
   align-items: center;
   padding-top: 3.5rem;
-  @media (max-width: 425px){
+  @media (max-width: 425px) {
     padding: 0;
   }
-`
 
+`
 export const ContainerMain = styled.div`
   display: flex;
   max-width: 900px;
-  @media (max-width: 594px){
+  @media (max-width: 594px) {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-`
+  @media (max-width: 897px){
+    padding-left: 1.5rem;
+  }
+  @media (max-width: 593px){
+    padding: 0;
+  }
+`;
 
 export const Image = styled.div`
-  @media (max-width: 594px){
+  @media (max-width: 594px) {
     width: 100%;
     display: flex;
     align-items: center;
-
   }
 
-
-  .next{
+  .next {
     display: none;
-    @media (max-width: 594px){
+    @media (max-width: 594px) {
       width: 40px;
       height: 40px;
-      border-radius: 50%;    
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -45,12 +49,12 @@ export const Image = styled.div`
       left: 1.5rem;
     }
   }
-  .previous{
+  .previous {
     display: none;
-    @media (max-width: 594px){   
+    @media (max-width: 594px) {
       width: 40px;
       height: 40px;
-      border-radius: 50%;    
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -65,9 +69,13 @@ export const Image = styled.div`
     max-height: 400px;
     border-radius: 0.6rem;
     cursor: pointer;
+    @media (max-width: 724px) {
+      max-width: 300px;
+      max-height: 300px;
+    }
   }
-  #img-load{
-    @media (max-width: 594px){
+  #img-load {
+    @media (max-width: 594px) {
       max-width: 100%;
       max-height: 100%;
       border-radius: 0;
@@ -78,37 +86,46 @@ export const Image = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: 594px){
+    @media (max-width: 594px) {
       display: none;
     }
     img {
       max-width: 100%;
       max-height: 84px;
-      &:hover{
-        border: 3px solid hsl(26,100%, 55%);
-        opacity:0.3;
+      @media (max-width: 724px) {
+        max-width: 60px;
+        max-height: 60px;
       }
-      @media (max-width: 594px){
+      &:hover {
+        border: 3px solid hsl(26, 100%, 55%);
+        opacity: 0.3;
+      }
+      @media (max-width: 594px) {
         max-width: 100%;
         max-height: 70px;
       }
     }
   }
-`
+`;
 
 export const TextInformation = styled.div`
   margin-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 320px){
+  @media (max-width: 666px) {
+    margin-left: 1rem;
+  }
+  @media (max-width: 897px){
+    margin-left: 2.5rem;
+  }
+  @media (max-width: 320px) {
     padding-left: 1rem;
   }
-  @media (max-width: 594px){
+  @media (max-width: 594px) {
     justify-content: flex-start;
-    margin: 0;
     max-width: 350px;
-    padding-top: 1rem;
+    margin-top: 1.5rem;
   }
   #sneaker {
     color: hsl(26, 100%, 55%);
@@ -121,8 +138,11 @@ export const TextInformation = styled.div`
     max-width: 400px;
     font-size: 40px;
     text-transform: capitalize;
-    @media (max-width: 594px){
+    @media (max-width: 594px) {
       font-size: 30px;
+    }
+    @media (max-width: 724px){
+      font-size: 35px;
     }
   }
   #description {
@@ -150,13 +170,25 @@ export const TextInformation = styled.div`
     color: hsl(220, 14%, 75%);
     text-decoration: line-through;
     margin-bottom: 2rem;
+    @media (max-width: 724px) {
+      margin-bottom: 0.8rem;
+    }
   }
   .buttons-add-cart {
     display: flex;
-    max-width: 100%;
+    max-width: 95%;
     justify-content: space-between;
+    @media (max-width: 724px) {
+      flex-direction: column;
+    }
     #addCart {
       width: 55%;
+      @media (max-width: 724px) {
+        width: 100%;
+      }
+      @media (max-width: 594px) {
+        margin-bottom: 2rem;
+      }
       background: hsl(26, 100%, 55%);
       color: hsl(0, 0%, 100%);
       font-size: 17px;
@@ -167,7 +199,7 @@ export const TextInformation = styled.div`
         color: white;
         margin-right: 1rem;
       }
-      &:hover{
+      &:hover {
         opacity: 0.7;
       }
     }
@@ -181,6 +213,10 @@ export const TextInformation = styled.div`
       font-weight: 700;
       background: hsl(0, 0%, 96%);
       border-radius: 0.5rem;
+      @media (max-width: 724px) {
+        margin-top: 0.5rem;
+        width: 100%;
+      }
       p {
         color: hsl(26, 100%, 55%);
         font-size: 30px;
@@ -188,4 +224,4 @@ export const TextInformation = styled.div`
       }
     }
   }
-`
+`;

@@ -13,7 +13,7 @@ export const ImagemFundo = styled.div`
     z-index: 1;
     overflow: hidden;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 593px) {
     display: none;
   }
 `;
@@ -23,6 +23,9 @@ export const ContainerImagem = styled.div`
   left: 400px;
   top: 100px;
   z-index: 2;
+  @media (max-width: 643px){
+    left: 60px;
+  }
   .remove-exit {
     display: flex;
     justify-content: end;

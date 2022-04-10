@@ -18,6 +18,18 @@ export const Modal = styled.div`
     left: 0.7rem;
     max-width: 300px;
   }
+  @media (max-width: 370px){
+    max-width: 320px;
+  }
+  @media (max-width: 348px){
+    max-width: 300px;
+  }
+  @media (max-width: 331px){
+    max-width: 290px;
+  }
+  @media (max-width: 315px){
+    max-width: 280px;
+  }
 `
 
 export const HeaderModal = styled.header`
@@ -31,6 +43,7 @@ export const HeaderModal = styled.header`
     color: hsl(220, 13%, 13%);
   }
   
+  
 `
 
 export const MainBg = styled.main` 
@@ -43,6 +56,15 @@ export const MainBg = styled.main`
 export const ContainerModal = styled.div`
   @media (max-width: 320px){
     max-width: 280px;
+  }
+  @media (max-width: 370px){
+    max-width: 300px;
+  }
+  @media (max-width: 348px){
+    max-width: 280px;
+  }
+  @media (max-width: 315px){
+    max-width: 260px;
   }
   .block-information-cart{
     display: flex;
